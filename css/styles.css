@@ -1,0 +1,826 @@
+                /* Reset some default styles */
+                
+                body,
+                h1,
+                h2,
+                p,
+                ul,
+                li {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                    width: 100%;
+                }
+                
+                body {
+                    background-color: #4284d3;
+                }
+                
+                .header {
+                    background-color: #04376c;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 20px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 999;
+                    /* Ensures the header is above other content */
+                }
+                
+                .logo {
+                    color: white;
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+                
+                .logo-text {
+                    color: white;
+                    text-decoration: none;
+                    font-style: italic;
+                }
+                
+                .topnav {
+                    display: flex;
+                    gap: 20px;
+                }
+                
+                .nav-link {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                    transition: 1s ease;
+                }
+                
+                .nav-link:hover {
+                    color: #d3e7ff;
+                    transition: 1s ease;
+                }
+                /* Banner styles */
+                
+                .banner {
+                    background: linear-gradient(90deg, #0092be, #0068be, #0052be);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 120px;
+                    max-height: fit-content;
+                    color: black;
+                    height: 44rem;
+                    gap: 180px;
+                }
+                
+                .banner-text {
+                    font-size: 36px;
+                    font-weight: bolder;
+                }
+                
+                .Projects-logos {
+                    width: 270px;
+                    height: 290px;
+                    border-radius: 50%;
+                    border: 5px solid darkblue;
+                    animation-name: moveUpDown;
+                    animation-duration: 2s;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                }
+                
+                @keyframes moveUpDown {
+                    0%,
+                    100% {
+                        transform: translateY();
+                    }
+                    50% {
+                        transform: translateY(20px);
+                    }
+                }
+                
+                .look-projects {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #0052be;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .look-projects:hover {
+                    background-color: #001cbe;
+                    /* Change background color on hover */
+                }
+                
+                .p-button--positive {
+                    color: white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                }
+                /* social */
+                
+                .socialmedia {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                
+                .social {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 15px;
+                    border: 2px solid darkblue;
+                }
+                
+                #signup .container {
+                    border-radius: 10px;
+                    background-color: #f0f0f0;
+                    padding: 20px;
+                }
+                
+                #signup .signup-title {
+                    font-weight: bold;
+                }
+                
+                #signup .form-group input[type="text"],
+                #signup .form-group input[type="email"],
+                #signup .form-group input[type="password"] {
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+                
+                #signup button[type="submit"] {
+                    border-radius: 5px;
+                    background-color: #0052be;
+                    color: #fff;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                }
+                
+                #signup button[type="submit"]:hover {
+                    background-color: #001cbe;
+                }
+                
+                #contact .contactContainer {
+                    background-color: white;
+                    border-radius: 5px;
+                    padding: 20px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                
+                #contact .contact-title {
+                    font-size: 25px;
+                    color: cyan;
+                }
+                
+                #contact .contact-txt {
+                    font-size: 18px;
+                }
+                /* Main styles */
+                
+                main {
+                    margin: 0px;
+                    padding: 20px 20px;
+                    background-color: #4284d3;
+                }
+                
+                .about {
+                    height: 42rem;
+                    display: flex;
+                    background-color: #f8f8f8;
+                    color: #000000;
+                    padding: 134.5px;
+                    text-align: center;
+                    align-items: center;
+                    gap: 120px;
+                }
+                
+                .about-img {
+                    width: 270px;
+                    height: 290px;
+                    text-align: center;
+                }
+                
+                .about-img img {
+                    width: 270px;
+                    height: 290px;
+                    border-radius: 50%;
+                    border: 5px solid darkblue;
+                    max-width: 100%;
+                    height: auto;
+                }
+                
+                .about-content {
+                    flex: 2;
+                    /* Make the .about-content take up 2/3 of the width */
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                
+                .about h2 {
+                    font-size: 36px;
+                }
+                
+                .about h3 {
+                    font-size: 24px;
+                    margin-top: 10px;
+                }
+                
+                .about p {
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                
+                .about a.btn {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: #0052be;
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+                    /* Add a transition for a smooth color change */
+                }
+                
+                .about a.btn:hover {
+                    background-color: #001cbe;
+                    /* Change the background color on hover */
+                }
+                /* Section Styles */
+                
+                section {
+                    background-color: #4284d3;
+                }
+                /* Style the section */
+                
+                .services {
+                    background: linear-gradient(90deg, #0092be, #0068be, #0052be);
+                    padding: 60px 0;
+                    text-align: center;
+                }
+                /* Style the heading */
+                
+                .heading {
+                    font-size: 36px;
+                    margin-bottom: 30px;
+                }
+                
+                .heading span {
+                    color: #007bff;
+                    /* Change to your desired color */
+                }
+                /* Style the services container */
+                
+                .services-container {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                /* Style the individual service boxes */
+                /* Style the individual service boxes with rounded borders */
+                
+                .services-box {
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                    padding: 20px;
+                    margin: 10px;
+                    text-align: center;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                }
+                
+                .services-box i {
+                    font-size: 36px;
+                    color: #007bff;
+                    /* Change to your desired icon color */
+                    margin-bottom: 10px;
+                }
+                
+                .services-box h3 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+                
+                .services-box p {
+                    font-size: 16px;
+                    color: #666;
+                }
+                /* Style the "Read More" button */
+                
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #0052be;
+                    /* Change to your desired button color */
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+                
+                .btn:hover {
+                    background-color: #001cbe;
+                }
+                /* Apply styles to the portafolio section */
+                
+                .portafolio {
+                    padding: 116px 0;
+                    background-color: #f8f8f8;
+                    text-align: center;
+                }
+                /* Style the heading */
+                
+                .heading {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                /* Style the project boxes */
+                
+                .portafolio-container {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                
+                .portafolio-box {
+                    flex: 0 0 calc(33.3333% - 20px);
+                    margin: 10px;
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    border-radius: 15px;
+                    /* Rounded borders */
+                }
+                /* Style project images */
+                
+                .portafolio-box img {
+                    max-width: 100%;
+                    height: auto;
+                }
+                /* Style project titles */
+                
+                .portafolio-layer h4 {
+                    font-size: 24px;
+                    margin-top: 15px;
+                }
+                /* Style project descriptions */
+                
+                .portafolio-layer p {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+                /* Style project links */
+                
+                .portafolio-layer a {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    color: #007BFF;
+                    text-decoration: none;
+                }
+                
+                .portafolio-layer a:hover {
+                    text-decoration: underline;
+                }
+                /* Style the contact section */
+                
+                .contact {
+                    background: linear-gradient(90deg, #0092be, #0068be, #0052be);
+                    padding: 160px;
+                    text-align: center;
+                    color: #fff;
+                }
+                
+                .contact .heading {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+                
+                .contact form {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+                
+                .contact .input-box {
+                    background-color: #f5f5f5;
+                    padding: 10px;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                }
+                
+                .contact input[type="text"],
+                .contact input[type="email"],
+                .contact input[type="number"],
+                .contact textarea {
+                    width: 48%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                /* footer */
+                
+                footer {
+                    background-color: #04376c;
+                    color: white;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                
+                footer a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bolder;
+                }
+                
+                footer a:hover {
+                    text-decoration: underline;
+                }
+                
+                #scrollToTopBtn {
+                    position: fixed;
+                    bottom: 20px;
+                    left: 20px;
+                    z-index: 999;
+                    background-color: #0052be;
+                    color: white;
+                    border: none;
+                    border-radius: 50%;
+                    padding: 15px 20px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+                
+                #scrollToTopBtn:hover {
+                    background-color: #001cbe;
+                }
+                /* Default styles for all screen sizes */
+                /* Mobile Small (up to 576px) */
+                /* Default styles for all screen sizes */
+                /* Mobile Small (up to 576px) */
+                
+                @media (max-width: 576px) {
+                    /* Header styles for small screens */
+                    .header {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        padding: 0px;
+                    }
+                    .topnav {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 0px;
+                    }
+                    .logo {
+                        font-size: 20px;
+                    }
+                    .nav-link {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                    }
+                    /* Banner styles for small screens */
+                    .banner {
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        text-align: center;
+                        padding-top: 4rem;
+                    }
+                    .Projects-logos {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        border: 5px solid darkblue;
+                        animation: none;
+                    }
+                    .banner-text {
+                        margin-top: -180px;
+                        padding: 20px;
+                        font-size: 24px;
+                    }
+                    .big-text {
+                        font-size: 16px;
+                    }
+                    .small-text {
+                        font-size: 12px;
+                    }
+                    .look-projects {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* About section styles for small screens */
+                    .about {
+                        padding-top: 13rem;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        padding-bottom: 13rem;
+                    }
+                    .about-img img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        border: 5px solid darkblue;
+                    }
+                    .about-content {
+                        margin-top: -140px;
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    .about-content p {
+                        width: 300px;
+                        font-size: 18px;
+                    }
+                    .about-content h2 {
+                        font-size: 20px;
+                    }
+                    .about-content h3 {
+                        font-size: 20px;
+                    }
+                    .about a.btn {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* Services section styles for small screens*/
+                    .services {
+                        padding-top: 200px;
+                    }
+                    .services-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0px;
+                    }
+                    .services-box {
+                        margin: 10px 0;
+                    }
+                    /* Portfolio section styles for small screens */
+                    .portafolio {
+                        padding-top: 200px;
+                    }
+                    .portafolio-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0px;
+                    }
+                    .portafolio-box {
+                        margin: 10px 0;
+                    }
+                    /* Contact section styles for small screens */
+                    .contact {
+                        padding: 10px 20px;
+                        padding-top: 160px;
+                    }
+                    .contact.input-box {
+                        width: 300px;
+                    }
+                    .contact .input-box input[type="text"],
+                    .contact .input-box input[type="email"],
+                    .contact .input-box input[type="number"],
+                    .contact .input-box textarea {
+                        width: 240px;
+                        margin-bottom: 10px;
+                    }
+                }
+                /* Mobile Medium (577px to 768px) */
+                
+                @media (min-width: 577px) and (max-width: 1023px) {
+                    /* Header styles for small screens */
+                    .header {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        padding: 5px 5px;
+                    }
+                    .topnav {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        gap: 0px;
+                    }
+                    .logo {
+                        font-size: 20px;
+                    }
+                    .nav-link {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                    }
+                    /* Banner styles for small screens */
+                    .banner {
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        text-align: center;
+                        padding-top: 4rem;
+                    }
+                    .Projects-logos {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        border: 5px solid darkblue;
+                        animation: none;
+                    }
+                    .banner-text {
+                        margin-top: -180px;
+                        padding: 20px;
+                        font-size: 30px;
+                    }
+                    .big-text {
+                        font-size: 30px;
+                    }
+                    .small-text {
+                        font-size: 18px;
+                    }
+                    .look-projects {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* About section styles for small screens */
+                    .about {
+                        padding-top: 13rem;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        padding-bottom: 13rem;
+                    }
+                    .about-img img {
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        border: 5px solid darkblue;
+                    }
+                    .about-content {
+                        margin-top: -140px;
+                        padding: 20px;
+                        text-align: center;
+                    }
+                    .about-content p {
+                        width: 300px;
+                        font-size: 18px;
+                    }
+                    .about-content h2 {
+                        font-size: 30px;
+                    }
+                    .about-content h3 {
+                        font-size: 28px;
+                    }
+                    .about a.btn {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* Services section styles for small screens*/
+                    .services {
+                        padding-top: 200px;
+                    }
+                    .services-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0px;
+                    }
+                    .services-box {
+                        margin: 10px 0;
+                    }
+                    /* Portfolio section styles for small screens */
+                    .portafolio {
+                        padding-top: 200px;
+                    }
+                    .portafolio-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0px;
+                    }
+                    .portafolio-box {
+                        margin: 10px 0;
+                    }
+                    /* Contact section styles for small screens */
+                    .contact {
+                        padding: 10px 20px;
+                        padding-top: 160px;
+                    }
+                    .contact.input-box {
+                        width: 300px;
+                    }
+                    .contact .input-box input[type="text"],
+                    .contact .input-box input[type="email"],
+                    .contact .input-box input[type="number"],
+                    .contact .input-box textarea {
+                        width: 240px;
+                        margin-bottom: 10px;
+                    }
+                }
+                
+                @media (min-width: 1024px) and (max-width: 1366px) {
+                    /* Banner styles for small screens */
+                    .banner {
+                        padding-top: 14px;
+                        margin-top: -60px;
+                        margin-bottom: -60px;
+                        padding-bottom: 13px;
+                    }
+                    .banner-text {
+                        margin-top: 0px;
+                        padding: 20px;
+                        font-size: 30px;
+                    }
+                    .big-text {
+                        font-size: 30px;
+                    }
+                    .small-text {
+                        font-size: 18px;
+                    }
+                    .look-projects {
+                        margin-top: 10px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* About section styles for small screens */
+                    .about {
+                        padding-top: 0px;
+                        margin-top: -60px;
+                        margin-bottom: -60px;
+                        padding-bottom: 0px;
+                    }
+                    .about-img img {
+                        max-width: 150px;
+
+                    }
+                    .about-content {
+                        margin-top: -60px;
+                        padding: 5px;
+                    }
+                    .about-content p {
+                        width: 550px;
+                        font-size: 18px;
+                    }
+                    .about-content h2 {
+                        font-size: 30px;
+                    }
+                    .about-content h3 {
+                        font-size: 28px;
+                    }
+                    .about a.btn {
+                        margin-top: 40px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    /* Services section styles for small screens*/
+                    .services {
+                        padding-top: 80px;
+                    }
+                    .services-container {
+                        gap: 0px;
+                    }
+                    .services-box {
+                        margin: 10px 0;
+                    }
+                    /* Portfolio section styles for small screens */
+                    .portafolio {
+                        padding-top: 80px;
+                    }
+                    .portafolio-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0px;
+                    }
+                    .portafolio-box {
+                        margin: 10px 0;
+                    }
+                    /* Contact section styles for small screens */
+                    .contact {
+                        padding: 10px 20px;
+                        padding-top: 80px;
+                        padding-bottom: 95px;
+                    }
+                    .contact.input-box {
+                        width: 700px;
+                    }
+                    .contact .input-box input[type="text"],
+                    .contact .input-box input[type="email"],
+                    .contact .input-box input[type="number"],
+                    .contact .input-box textarea {
+                        width: 240px;
+                        margin-bottom: 10px;
+                    }
+                }
